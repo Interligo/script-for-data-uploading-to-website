@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+{% block title %} Психотерапевты {% endblock %}
+
+{% block content %}
+
+    {% if all_psychotherapists %}
+
+        {% for psychotherapist in all_psychotherapists %}
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="card-title">{{ psychotherapist.name }}</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Описание психотерапевта</p>
+                    <a href="{% url 'main:detail' psychotherapist_id=psychotherapist.id %}"
+                       class="btn btn-primary">Перейти на страницу психотерапевта</a>
+                </div>
+            </div>
+        {% endfor %}
+
+    {% else %}
+        Ничего не найдено.
+    {% endif %}
+
+{% endblock %}

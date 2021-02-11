@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block title %} Психотерапевт {{ psychotherapist.name }} {% endblock %}
+
+{% block main %} Вернуться на главную страницу {% endblock %}
+
+{% block content %}
+
+    <div class="row mx-auto">
+        <div class="card border-primary w-25">
+            <img src="{{ psychotherapist.photo }}" class="photo-detail"/>
+        </div>
+        <div class="card border-primary w-25 mx-2">
+            <div class="card-header bg-primary text-white">
+                <h4 class="card-title text-center">{{ psychotherapist.name }}</h4>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title text-left">Методы:</h4>
+                {% if methods %}
+                    <div class="card-deck">
+                    {% for method in methods %}
+                        <div class="card border-primary">{{ method }}</div>
+                    {% endfor %}
+                    </div>
+                {% else %}
+                    Не удалось найти методы.
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

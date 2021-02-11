@@ -1,0 +1,33 @@
+[
+    {
+        "airtable_id": "recDLb2w66iktylre",
+        "methods": [
+            "Психоанализ",
+            "Коучинг",
+            "Музыкотерапия"
+        ],
+        "name": "Василий",
+        "photo": "https://dl.airtable.com/.attachments/7da0d4c7963babf742137abc4e9a1a99/5f547505/1.jpg"
+    },
+    {
+        "airtable_id": "recVe7UKduMpTIccG",
+        "methods": [
+            "Психоанализ",
+            "Музыкотерапия",
+            "Сказкотерапия"
+        ],
+        "name": "Георгий",
+        "photo": "https://dl.airtable.com/.attachments/c15cce685652a0670beb0f4bb2485041/0d0720fe/3.jpg"
+    },
+    {
+        "airtable_id": "recYhxYeMr4hrWJg6",
+        "methods": [
+            "Гештальт-терапия",
+            "Коучинг",
+            "Психосинтез",
+            "Сказкотерапия"
+        ],
+        "name": "Иннокентий",
+        "photo": "https://dl.airtable.com/.attachments/fa70928a82a214d22c4b7a2eeace79d2/e5a12360/2.jpg"
+    }
+]
