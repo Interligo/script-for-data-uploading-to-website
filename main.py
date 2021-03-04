@@ -5,9 +5,6 @@ from db_management import DataBaseManager
 from main_management import MainManager
 
 
-# TODO: SLI скрипт, добавить запуск через exe
-# TODO: Дополнить main развертываением сайта
-
 def main():
     print('Скрипт запускается...')
     airtable = AirtableManager()
